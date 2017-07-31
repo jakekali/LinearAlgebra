@@ -17,11 +17,17 @@ def dotProduct(vector1, vector2):
     fin = 0
     for num in dots:
         fin = fin + num
-
+    print(str(fin))
     return (fin)
 
+#2 Vectors are right, if they there inter product is 0
+def isRight(vector1,vector2):
+    if dotProduct(vector1 ,vector2) == int(0):
+        return True
+    else:
+        return False
 
-vector1 = np.array([4,-2,0,1])
-vector2 = np.array([[-1],[-3],[1],[5]])
+vector1 = np.array([6,2])
+vector2 = np.array([[-1],[5]])
 
-print(dotProduct(vector1, vector2))
+print(isRight(vector1, vector2))
