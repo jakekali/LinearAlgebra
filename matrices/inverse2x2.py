@@ -11,6 +11,6 @@ def inverse2x2(matrix1):
 
     id = np.array([[1,0],[0,1]])
     if(result.all() == id.all()):
-        return final;
+        return final
 
 inverse2x2(np.array([[4,-7],[2,-3]]))
