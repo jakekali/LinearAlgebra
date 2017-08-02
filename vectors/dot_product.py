@@ -3,7 +3,7 @@ import numpy as np
 def dotProduct(vector1, vector2):
     vector1 = np.reshape(vector1,-1)
     vector2 = np.reshape(vector2,-1)
-   
+
     if(vector1.size != vector2.size):
         return bool(0)
     dots = np.array([])
