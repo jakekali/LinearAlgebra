@@ -10,7 +10,8 @@ def inverse2x2(matrix1):
     result = mm.martixMultiply(matrix1,final)
 
     id = np.array([[1,0],[0,1]])
-    if(result.all() == id.all()):
+    if(np.array_equal(id, result)):
         return final
+    else:
+        return False
 
-inverse2x2(np.array([[4,-7],[2,-3]]))
